@@ -1,0 +1,149 @@
+/* Reset base e Stili Generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Sfondo molto scuro */
+    color: #cccccc; /* Testo grigio chiaro */
+    font-family: 'Courier Prime', monospace; /* Font stile macchina da scrivere */
+    line-height: 1.6;
+    /* Immagine di sfondo opzionale (es. texture grunge) */
+    /* background-image: url('immagini/grunge-texture.png'); */
+    /* background-repeat: repeat; */
+}
+
+a {
+    color: #ff6347; /* Un colore contrastante, tipo rosso pomodoro */
+    text-decoration: none;
+    border-bottom: 1px dotted #ff6347;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Header */
+.site-header {
+    background-color: #0d0d0d; /* Nero quasi assoluto */
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 2px dashed #555555; /* Bordo tratteggiato grigio scuro */
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    font-family: 'Special Elite', cursive; /* Font più "emo" per il titolo */
+    color: #e0e0e0;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px #000; /* Ombra per dare profondità */
+}
+
+.site-header .subtitle {
+    color: #888888;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Area Contenuti Principali */
+.content-area {
+    max-width: 800px; /* Larghezza massima per leggibilità */
+    margin: 0 auto; /* Centra il contenuto */
+    padding: 0 15px;
+}
+
+/* Singolo Documento */
+.document-entry {
+    background-color: #252525; /* Sfondo leggermente più chiaro per le entry */
+    border: 1px solid #444444; /* Bordo sottile */
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombra per effetto "sollevato" */
+}
+
+.document-entry:last-child {
+    margin-bottom: 0;
+}
+
+.document-title {
+    font-family: 'Special Elite', cursive;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.document-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #b0b0b0; /* Grigio leggermente più scuro per la descrizione */
+}
+
+.pdf-link {
+    display: inline-block; /* Per applicare padding */
+    padding: 8px 15px;
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 3px; /* Angoli leggermente arrotondati */
+    font-weight: bold;
+    text-transform: uppercase; /* Testo maiuscolo per il link */
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.pdf-link:hover,
+.pdf-link:focus {
+    background-color: #ff6347;
+    color: #000000;
+    border-color: #ff6347;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 40px;
+    padding: 20px 15px;
+    text-align: center;
+    border-top: 2px dashed #555555;
+    color: #777777;
+    font-size: 0.85rem;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .site-header h1 {
+        font-size: 2rem;
+    }
+    .document-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+    .site-header .subtitle {
+        font-size: 0.8rem;
+    }
+    .document-title {
+        font-size: 1.3rem;
+    }
+    .document-description {
+        font-size: 0.9rem;
+    }
+    .pdf-link {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
